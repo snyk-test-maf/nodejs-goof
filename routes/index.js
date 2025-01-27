@@ -19,6 +19,9 @@ var fs = require('fs');
 // prototype-pollution
 var _ = require('lodash');
 
+var password = 'myPassword';
+console.log('password: ' + password);
+
 exports.index = function (req, res, next) {
   Todo.
     find({}).
